@@ -2,18 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view("/admin-panel", 'dashboard.index')->name('adminpanel');
+Route::view("/admin-panel", 'dashboard.index')->name('admin-panel.index');
+Route::get("/admin-panel/settings", [\App\Http\Controllers\Admin\SettingsController::class, 'index'])->name('admin-panel.settings');

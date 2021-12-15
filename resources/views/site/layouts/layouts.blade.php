@@ -1,4 +1,4 @@
-@include ('site.parts.header')
+@include ('site.parts.head')
 
 @include ('site.parts.topbar')
 

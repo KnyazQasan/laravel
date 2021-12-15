@@ -1,6 +1,7 @@
 
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
+@extends('site.layouts.layouts')
+
+@section('page-content')
     <div class="main-banner header-text" id="top">
         <div class="Modern-Slider">
           <!-- Item -->
@@ -68,7 +69,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service_01.jpg" alt="">
+              <img src="{{ asset('front/assets/images/service_01.jpg') }}" alt="">
               <div class="down-content">
                 <h4>Digital Currency</h4>
                 <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
@@ -78,7 +79,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service_02.jpg" alt="">
+              <img src="{{ asset('front/assets/images/service_02.jpg')}}" alt="">
               <div class="down-content">
                 <h4>Market Analysis</h4>
                 <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
@@ -88,7 +89,7 @@
           </div>
           <div class="col-md-4">
             <div class="service-item">
-              <img src="assets/images/service_03.jpg" alt="">
+              <img src="{{ asset('front/assets/images/service_03.jpg')}}" alt="">
               <div class="down-content">
                 <h4>Historical Data</h4>
                 <p>Sed tincidunt dictum lobortis. Aenean tempus diam vel augue luctus dignissim. Nunc ornare leo tortor.</p>
@@ -107,7 +108,7 @@
             <div class="left-content">
               <span>Lorem ipsum dolor sit amet</span>
               <h2>Our solutions for your <em>business growth</em></h2>
-              <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue. 
+              <p>Pellentesque ultrices at turpis in vestibulum. Aenean pretium elit nec congue elementum. Nulla luctus laoreet porta. Maecenas at nisi tempus, porta metus vitae, faucibus augue.
               <br><br>Fusce et venenatis ex. Quisque varius, velit quis dictum sagittis, odio velit molestie nunc, ut posuere ante tortor ut neque.</p>
               <a href="" class="filled-button">Read More</a>
             </div>
@@ -152,7 +153,7 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="left-image">
-                    <img src="assets/images/more-info.jpg" alt="">
+                    <img src="{{ asset('front/assets/images/more-info.jpg')}}" alt="">
                   </div>
                 </div>
                 <div class="col-md-6 align-self-center">
@@ -181,7 +182,7 @@
           </div>
           <div class="col-md-12">
             <div class="owl-testimonials owl-carousel">
-              
+
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>George Walker</h4>
@@ -190,7 +191,7 @@
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
-              
+
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>John Smith</h4>
@@ -199,7 +200,7 @@
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
-              
+
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>David Wood</h4>
@@ -208,7 +209,7 @@
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
-              
+
               <div class="testimonial-item">
                 <div class="inner-content">
                   <h4>Andrew Boom</h4>
@@ -217,7 +218,7 @@
                 </div>
                 <img src="http://placehold.it/60x60" alt="">
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -275,30 +276,31 @@
         <div class="row">
           <div class="col-md-12">
             <div class="owl-partners owl-carousel">
-            
+
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="1" alt="1">
+                <img src="{{ asset('front/assets/images/client-01.png')}}" title="1" alt="1">
               </div>
-              
+
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="2" alt="2">
+                <img src="{{ asset('front/assets/images/client-01.png')}}" title="2" alt="2">
               </div>
-              
+
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="3" alt="3">
+                <img src="{{ asset('front/assets/images/client-01.png')}}" title="3" alt="3">
               </div>
-              
+
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="4" alt="4">
+                <img src="{{ asset('front/assets/images/client-01.png')}}" title="4" alt="4">
               </div>
-              
+
               <div class="partner-item">
-                <img src="assets/images/client-01.png" title="5" alt="5">
+                <img src="{{ asset('front/assets/images/client-01.png')}}" title="5" alt="5">
               </div>
-              
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
+@endsection

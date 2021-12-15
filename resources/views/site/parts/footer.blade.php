@@ -65,13 +65,13 @@
           </div>
         </div>
       </footer>
-      
+
       <div class="sub-footer">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <p>Copyright &copy; 2020 Financial Business Co., Ltd.
-              
+
               - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a><br>
               Distributed By: <a rel="nofollow noopener" href="https://themewagon.com" target="_blank">ThemeWagon</a>
             </p>
@@ -79,19 +79,19 @@
           </div>
         </div>
       </div>
-  
+
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+      <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
+      <script src="{{asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
       <!-- Additional Scripts -->
-      <script src="assets/js/custom.js"></script>
-      <script src="assets/js/owl.js"></script>
-      <script src="assets/js/slick.js"></script>
-      <script src="assets/js/accordions.js"></script>
-  
-      <script language = "text/Javascript"> 
-        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      <script src="{{ asset('front/assets/js/custom.js') }}"></script>
+      <script src="{{asset('front/assets/js/owl.js')}}"></script>
+      <script src="{{asset('front/assets/js/slick.js')}}"></script>
+      <script src="{{asset('front/assets/js/accordions.js')}}"></script>
+      <script type= "text/Javascript">
+          let cleared;
+          cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
         function clearField(t){                   //declaring the array outside of the
         if(! cleared[t.id]){                      // function makes it static and global
             cleared[t.id] = 1;  // you could use true and false, but that's more typing
@@ -100,6 +100,6 @@
             }
         }
       </script>
-  
+
     </body>
   </html>

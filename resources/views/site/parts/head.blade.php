@@ -12,17 +12,11 @@
     <title>Finance Business HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-<!--
+    <link rel="stylesheet" href="{{ asset('front/assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{asset('front/assets/css/templatemo-finance-business.css')}}">
+    <link rel="stylesheet" href="{{asset('front/assets/css/owl.css')}}">
 
-Finance Business TemplateMo
-
-https://templatemo.com/tm-545-finance-business
-
--->
   </head>

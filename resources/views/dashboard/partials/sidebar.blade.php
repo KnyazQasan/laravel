@@ -22,17 +22,38 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-
-    <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-           aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Components</span>
-        </a>
-
+    <li class="nav-item @if(Request::segment(2) =="sliders") active  @endif">
+        <a class="nav-link " href="{{ route('admin-panel.sliders')}}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Sliders</span></a>
     </li>
 
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <li class="nav-item @if(Request::segment(2) =="services") active  @endif">
+        <a class="nav-link " href="{{ route('admin-panel.services')}}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Services</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <li class="nav-item @if(Request::segment(2) =="information") active  @endif">
+        <a class="nav-link " href="{{ route('admin-panel.information')}}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Information</span></a>
+    </li>
+
+    <hr class="sidebar-divider">
+
+    <li class="nav-item @if(Request::segment(2) =="team") active  @endif">
+        <a class="nav-link " href="{{ route('admin-panel.team')}}">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Team</span></a>
+    </li>
 
 
     <!-- Divider -->

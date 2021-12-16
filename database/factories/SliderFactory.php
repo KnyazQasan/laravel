@@ -14,7 +14,9 @@ class SliderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "title" => "Slide title",
+            "subtitle" => "Slide subtitle",
+            'description' => "Slide description",
         ];
     }
 }

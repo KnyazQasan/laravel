@@ -14,7 +14,10 @@ class TeamFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "team_member_name" => "Filankes",
+            "team_member_duty" => "job",
+            "team_member_about" => "Lorem ipsum dolor sit",
+
         ];
     }
 }

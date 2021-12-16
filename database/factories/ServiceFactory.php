@@ -14,7 +14,8 @@ class ServiceFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "service_title" => "service title",
+            "service_description" => "Service  description",
         ];
     }
 }

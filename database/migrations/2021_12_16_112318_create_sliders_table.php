@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLogoSlidersTable extends Migration
+class CreateSlidersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class CreateLogoSlidersTable extends Migration
      */
     public function up()
     {
-        Schema::create('logo-sliders', function (Blueprint $table) {
+        Schema::create('sliders', function (Blueprint $table) {
             $table->id();
-            $table->string('slide-image');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ class CreateLogoSlidersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('sliders');
     }
 }

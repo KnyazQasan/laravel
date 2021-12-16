@@ -18,6 +18,7 @@ class CreateSettingsTable extends Migration
             $table->string('title')->nullable();
             $table->string('subtitle')->nullable();
             $table->string('logo')->nullable();
+            $table->string('favicon')->nullable();
             $table->text('description')->nullable();
             $table->text('keywords')->nullable();
             $table->text('author')->nullable();

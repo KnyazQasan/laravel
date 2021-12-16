@@ -18,7 +18,7 @@ class SettingsController extends Controller
             'subtitle' => 'required',
             'logo' => 'image|nullable|mimes:png,jpeg,jpg,svg',
             'favicon' => 'image|nullable|mimes:png,jpeg,jpg,svg'
-        ]);        
+        ]);
 
         $settings->title = $request->title;
         $settings->subtitle = $request->subtitle;
@@ -28,13 +28,13 @@ class SettingsController extends Controller
         $settings->keywords = $request->keywords;
         if($request->hasFile('logo') ){
             $fileName = 'logo'.time(). '.'.$request->logo->extension();
-            $fileNameWithUpload = "storage/uploads/settings";
+            $fileNameWithUpload = "storage/uploads/settings/".$fileName;
             $request->logo->storeAs('public/uploads/settings', $fileName);
             $settings->logo = $fileNameWithUpload;
         }
         if($request->hasFile('favicon') ){
             $fileName = 'favicon'.time(). '.'.$request->favicon->extension();
-            $fileNameWithUpload = "storage/uploads/settings";
+            $fileNameWithUpload = "storage/uploads/settings/".$fileName;
             $request->favicon->storeAs('public/uploads/settings', $fileName);
             $settings->favicon = $fileNameWithUpload;
         }

@@ -12,19 +12,19 @@ class AuthController extends Controller
         return view('dashboard.login');
     }
     public function login(Request $request){
-        
+
         $this->validate($request,[
             'email' => 'email|required',
             'password' => 'required'
         ]);
 
-        
+
         if( !Auth::attempt(['email' => $request->email, 'password' =>$request->password])){
-            return redirect()->back()->with('danger', 'Wrong Email or password!');
+            return redirect()->back()->with('danger', 'Email Sehvdir!');
         }
-        
+
         return redirect()->route('admin-panel.index');
-        
+
     }
     public function logout(){
         auth()->logout();

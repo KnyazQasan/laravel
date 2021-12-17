@@ -6,7 +6,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin-panel.index')}}">
 
-        <div class="sidebar-brand-text mx-3"> Admin</div>
+        <div class="sidebar-brand-text mx-3">Yonetici Paneli</div>
     </a>
 
     <!-- Divider -->
@@ -16,7 +16,7 @@
     <li class="nav-item @if(Request::segment(2) =="") active  @endif  ">
         <a class="nav-link" href="{{ route('admin-panel.index')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
+            <span>ana sehife</span></a>
     </li>
 
     <!-- Divider -->
@@ -25,7 +25,7 @@
     <li class="nav-item @if(Request::segment(2) =="sliders") active  @endif">
         <a class="nav-link " href="{{ route('admin-panel.sliders')}}">
             <i class="fas fa-fw fa-table"></i>
-            <span>Sliders</span></a>
+            <span>Slayder</span></a>
     </li>
 
 
@@ -35,7 +35,7 @@
     <li class="nav-item @if(Request::segment(2) =="services") active  @endif">
         <a class="nav-link " href="{{ route('admin-panel.services')}}">
             <i class="fas fa-fw fa-table"></i>
-            <span>Services</span></a>
+            <span>Servis</span></a>
     </li>
 
     <!-- Divider -->
@@ -44,7 +44,7 @@
     <li class="nav-item @if(Request::segment(2) =="information") active  @endif">
         <a class="nav-link " href="{{ route('admin-panel.information')}}">
             <i class="fas fa-fw fa-table"></i>
-            <span>Information</span></a>
+            <span>melumat (Xeber)</span></a>
     </li>
 
     <hr class="sidebar-divider">
@@ -52,7 +52,7 @@
     <li class="nav-item @if(Request::segment(2) =="team") active  @endif">
         <a class="nav-link " href="{{ route('admin-panel.team')}}">
             <i class="fas fa-fw fa-table"></i>
-            <span>Team</span></a>
+            <span>Komanda</span></a>
     </li>
 
 
@@ -67,7 +67,7 @@
     <li class="nav-item @if(Request::segment(2) =="settings") active  @endif">
         <a class="nav-link " href="{{ route('admin-panel.settings')}}">
             <i class="fas fa-fw fa-table"></i>
-            <span>Settings</span></a>
+            <span>Sayt Parametrleri</span></a>
     </li>
 
     <!-- Divider -->

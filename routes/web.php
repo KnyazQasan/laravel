@@ -5,15 +5,22 @@ use App\Http\Controllers\Admin\ServicesController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\SlidersController;
 use App\Http\Controllers\Admin\TeamsController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('index');
+    return view('home');
 });
+Route::get('/home',[PageController::class ,'home'])->name('home');
+Route::get('/about',[PageController::class ,'about'])->name('about');
+Route::get('/portfolio',[PageController::class ,'portfolio'])->name('portfolio');
+Route::get('/service',[PageController::class ,'service'])->name('service');
+Route::get('/blog',[PageController::class ,'blog'])->name('blog');
+Route::get('/contact',[PageController::class ,'contact'])->name('contact');
+Route::get('/submenu/{id}',[PageController::class ,'submenu'])->name('submenu');
 
-
-Route::group(['prefix' => '/admin', 'as' => 'admin-panel.'],function () {
+Route::group(['prefix' => '/site-admin-login', 'as' => 'admin-panel.'],function () {
 
     Route::group(['middleware' => 'isLogin'], function(){
         Route::get("/",     [AuthController::class, 'index'])->name('login');

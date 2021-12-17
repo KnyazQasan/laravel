@@ -43,7 +43,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 Description <span style="color: red">*</span>
-                                <input type="text" name="description" value="{{ $slide->gidescription }}" class="form-control" required>
+                                <input type="text" name="description"  class="form-control" required>
                             </div>
                         </div>
 
